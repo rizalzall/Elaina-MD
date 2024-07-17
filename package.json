@@ -42,6 +42,7 @@
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys@*",
         "@bochilteam/scraper": "^4.2.4",
         "acrcloud": "^1.4.0",
+        "api-dylux": "^1.8.4",
         "aptoide-scraper": "^1.0.1",
         "awesome-phonenumber": "^5.10.0",
         "axios": "^1.4.0",
