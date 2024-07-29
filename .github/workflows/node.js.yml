@@ -21,5 +21,6 @@ jobs:
           cache: 'npm'
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg imagemagick
       - run: git clone https://github.com/fahmih6/Weebs_Scraper.git
+      - run: cd fahmih6/Weebs_Scraper
       - run: npm install
       - run: npm start
