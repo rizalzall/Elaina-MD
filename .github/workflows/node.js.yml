@@ -1,10 +1,8 @@
 name: Node.js CI
 
 on:
-  pull_request:
+  push:
     branches: [ "master" ]
-  schedule:
-    - cron: '0 */6 * * *'
 
 jobs:
   build:
@@ -22,5 +20,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg imagemagick
+      - run: git clone https://github.com/fahmih6/Weebs_Scraper.git
       - run: npm install
       - run: npm start
